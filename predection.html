@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoveMatch Result</title>
+    <!-- Include your CSS stylesheets here -->
+  </head>
+  <body>
+    <div class="result-container">
+      <div class="names-box">
+        <span class="firstName"></span> & <span class="secondName"></span>
+      </div>
+      <div class="result-animation" id="result-animation"></div>
+      <p id="love-percentage"></p>
+      <p id="result-paragraph"></p>
+      <a href="#" class="LoveMatch-again">New LoveMatch</a>
+    </div>
+    <div class="share-container">
+      <a href="#" onclick="shareOnSocial('facebook')">Share on Facebook</a>
+      <a href="#" onclick="shareOnSocial('twitter')">Share on Twitter</a>
+      <a href="#" onclick="shareOnSocial('instagram')">Share on Instagram</a>
+      <a href="#" onclick="shareOnSocial('whatsapp')">Share on WhatsApp</a>
+    </div>
+    <!-- Include your JavaScript files here -->
+
+    <script>
+      let animation = sessionStorage.getItem("animation");
+      let paragraph = sessionStorage.getItem("paragraph");
+      let lovePercentage = sessionStorage.getItem("lovePercentage");
+      let firstName = sessionStorage.getItem("firstName");
+      let SecondName = sessionStorage.getItem("SecondName");
+
+      // Display the values in the relevant elements on the prediction page
+      document.getElementById("result-animation").classList.add(animation);
+      document.getElementById("result-paragraph").textContent = paragraph;
+      document.getElementById(
+        "love-percentage"
+      ).textContent = `Love Percentage: ${lovePercentage}%`;
+
+      document.getElementById("firstName").textContent = firstName;
+      document.getElementById("secondName").textContent = secondName;
+    </script>
+  </body>
+</html>
