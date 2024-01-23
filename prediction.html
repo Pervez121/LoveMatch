@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoveMatch Result</title>
+    <link rel="icon" type="ico" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Include your CSS stylesheets here -->
+  </head>
+  <body>
+    <header class="navigation">
+      <nav class="nav-container">
+        <div class="logo-box">
+          <a href="index.html">
+            <img src="./images/LoveMatch.png" alt="" class="logo" />
+          </a>
+        </div>
+        <ul class="navigation">
+          <li class="navitems">
+            <a href="about.html" class="item-links">About LoveMatch!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <div class="width-container">
+        <div class="result-container">
+          <div class="names-box">
+            <span id="firstName"></span> &
+            <span id="secondName">
+              <img src="" alt="" class="result-animation" />
+            </span>
+          </div>
+          <div class="result-animation">
+            <img src="" alt="" id="result-animation" />
+          </div>
+          <p id="love-percentage"></p>
+          <p id="result-paragraph"></p>
+          <a href="#" class="LoveMatch-again">New LoveMatch</a>
+        </div>
+        <div class="share-container">
+          <span class="share">Share Results</span>
+          <div class="share-icons-box">
+            <a href="#" onclick="shareOnSocial('facebook')"
+              ><img
+                src="./images/social-icons/facebook.png"
+                alt="facebook"
+                srcset=""
+            /></a>
+            <a href="#" onclick="shareOnSocial('twitter')"
+              ><img src="./images/social-icons/twitter.png" alt="x" srcset=""
+            /></a>
+            <a href="#" onclick="shareOnSocial('instagram')"
+              ><img
+                src="./images/social-icons/instagram.png"
+                alt="instagram"
+                srcset=""
+            /></a>
+            <a href="#" onclick="shareOnSocial('whatsapp')"
+              ><img src="./images/social-icons/whatsup.png" alt="" srcset=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="width-container">
+        <hr />
+        <div class="main-footer-content">
+          <div class="copy-rights">
+            <p id="copyright">
+              © <span id="currentYear"></span> All Rights Reserved
+            </p>
+          </div>
+          <ul class="navigation">
+            <li class="navitems">
+              <a
+                href="https://pervez-iqbal.netlify.app/"
+                class="item-links developer"
+                >Developer</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Get values from the session
+      let firstName = sessionStorage.getItem("firstName");
+      let secondName = sessionStorage.getItem("secondName");
+      let animation = sessionStorage.getItem("animation");
+      let paragraph = sessionStorage.getItem("paragraph");
+      let lovePercentage = sessionStorage.getItem("lovePercentage");
+
+      // Check if necessary values are present
+      if (firstName && secondName && animation && paragraph && lovePercentage) {
+        // Display the values in the relevant elements on the prediction page
+        // Set the HTML content of the result-animation div
+        document.getElementById("result-animation").src =
+          "images/gif/" + animation + ".gif";
+        document.getElementById("result-paragraph").textContent = paragraph;
+        document.getElementById(
+          "love-percentage"
+        ).textContent = `${lovePercentage}%`;
+
+        document.getElementById("firstName").textContent = firstName;
+        document.getElementById("secondName").textContent = secondName;
+      } else {
+        // If the necessary values are not present, redirect to another page or show an error message
+        window.location.href = "index.html"; // Replace 'error.html' with the actual error page
+      }
+    </script>
+  </body>
+</html>

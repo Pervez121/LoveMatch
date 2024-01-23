@@ -4,73 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The love Calculator</title>
+    <link rel="icon" type="ico" href="/images/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="navigation">
-      <nav class="container">
+      <nav class="nav-container">
         <div class="logo-box">
-          <img src="" alt="" class="logo" />
+          <a href="index.html">
+            <img src="./images/LoveMatch.png" alt="" class="logo" />
+          </a>
         </div>
         <ul class="navigation">
           <li class="navitems">
             <a href="about.html" class="item-links">About LoveMatch!</a>
-          </li>
-          <li class="navitems">
-            <a href="https://pervez-iqbal.netlify.app/" class="item-links"
-              >Developer</a
-            >
           </li>
         </ul>
       </nav>
     </header>
     <section class="content">
       <div class="main-box">
-        <h1 class="page-title">
-          Welcome to LoveMatch – Your Cosmic Guide to Love Connections!
-        </h1>
-        <p class="description">
-          Embark on a journey into the universe of love with LoveMatch, an
-          enchanting creation by the Romance Guru! Names are more than letters;
-          they're the keys to unlocking a world of romantic possibilities.
-          Curious about the harmony in your hearts? Let LoveMatch be your guide!
-        </p>
-        <p class="description">
-          Immerse yourself in the magic of romance as you explore the potential
-          of your connection. Crafted with the touch of a true Romance Guru,
-          LoveMatch goes beyond mere calculations; it's a gateway to the destiny
-          of your heart's journey.
-        </p>
-        <p class="description">
-          To unravel the cosmic threads between you and your crush, input your
-          full names (first and last) into the celestial text boxes below.
-          Witness the enchantment as LoveMatch unveils the celestial
-          compatibility. Let your love story sparkle in the cosmic tapestry!
-          💖🌌
-        </p>
-        <div class="input-section">
-          <form action="" class="names-form">
-            <div class="name-box">
-              <label for="first-name" class="name">Your Name</label>
-              <input type="text" name="first-name" id="first-name" />
-            </div>
-            <div class="name-box">
-              <label for="second-name" class="name">Your Partner Name</label>
-              <input type="text" name="second-name" id="second-name" />
-            </div>
-            <button
-              class="submit-button"
-              type="submit"
-              onclick="generateLoveText();"
-            >
-              Calculate Love
-            </button>
-          </form>
+        <div class="content-box">
+          <h1 class="page-title">
+            Welcome to LoveMatch <br />
+            Your Cosmic Guide to Love Connections!
+          </h1>
+          <p class="description">
+            Embark on a love journey with LoveMatch, crafted by the Romance
+            Guru! Your names hold the key to romantic possibilities, and
+            LoveMatch is your guide to unraveling the magic. Enter your full
+            names, check your LoveMatchy, share it with your partner, and have
+            fun as your love story sparkles in the celestial tapestry! 💖🌌
+          </p>
+          <div class="input-section">
+            <form action="prediction.html" method="post" class="names-form">
+              <div class="form-container">
+                <div class="name-box">
+                  <label for="first-name" class="name">Your Name</label><br />
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="name-box">
+                  <label for="second-name" class="name">Your Partner Name</label
+                  ><br />
+                  <input
+                    type="text"
+                    name="second-name"
+                    id="second-name"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <button
+                class="submit-button"
+                type="submit"
+                onclick="generateLoveText();"
+              >
+                Calculate Love
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="width-container">
+        <hr />
+        <div class="main-footer-content">
+          <div class="copy-rights">
+            <p id="copyright">
+              © <span id="currentYear"></span> All Rights Reserved
+            </p>
+          </div>
+          <ul class="navigation">
+            <li class="navitems">
+              <a
+                href="https://pervez-iqbal.netlify.app/"
+                class="item-links developer"
+                >Developer</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
