@@ -120,7 +120,7 @@ function generateLoveText() {
         sessionStorage.setItem("secondName", secondName);
 
         // Redirect to prediction.html with URL parameters
-        window.location.href = `./predict/prediction.html/?first-name=${encodeURIComponent(firstName)}&second-name=${encodeURIComponent(secondName)}`;
+        window.location.href = `./predict/prediction.html?first-name=${encodeURIComponent(firstName)}&second-name=${encodeURIComponent(secondName)}`;
     }
 }
 
