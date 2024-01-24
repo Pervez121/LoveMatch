@@ -8,6 +8,7 @@ nav.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 10px;
 }
 
 img.logo {
@@ -34,6 +35,7 @@ a.item-links {
 
 
 
+.width-container,
 nav.nav-container,
 .main-box,
 .width-container {
@@ -223,4 +225,35 @@ span.share {
 .share-icons-box img {
     width: 50px;
     margin: 0px 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    hr,
+    .width-container,
+    nav.nav-container,
+    .content-box,
+    .main-box,
+    .main-footer-content {
+        width: 80%;
+        margin: auto;
+    }
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    /* Styles for screens up to 1000 pixels wide */
+}
+
+@media only screen and (max-width: 800px) {
+    /* Styles for screens up to 800 pixels wide */
+}
+
+@media only screen and (max-width: 600px) {
+    /* Styles for screens up to 600 pixels wide */
+}
+
+@media only screen and (max-width: 400px) {
+    /* Styles for screens up to 400 pixels wide */
 }
