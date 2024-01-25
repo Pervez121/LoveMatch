@@ -72,7 +72,7 @@ p.description {
 }
 
 .content-box {
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
 }
 
@@ -117,7 +117,7 @@ a.LoveMatch-again {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
 }
 
@@ -235,25 +235,108 @@ span.share {
     .content-box,
     .main-box,
     .main-footer-content {
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
 
 
 }
 
-@media only screen and (max-width: 1000px) {
-    /* Styles for screens up to 1000 pixels wide */
+
+@media only screen and (max-width: 768px) {
+
+    input#second-name,
+    input#first-name {
+        font-size: 15px;
+    }
+
 }
 
-@media only screen and (max-width: 800px) {
-    /* Styles for screens up to 800 pixels wide */
+@media only screen and (max-width: 696px) {
+
+
+    label.name {
+        width: 270px;
+        text-wrap: nowrap;
+    }
+
+    .form-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .name-box {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
 }
 
-@media only screen and (max-width: 600px) {
-    /* Styles for screens up to 600 pixels wide */
+@media only screen and (max-width: 580px) {
+
+    .name-box {
+
+        flex-direction: column;
+    }
+
+    .name-box br {
+        display: none;
+    }
+
+    button.submit-button {
+        margin: auto;
+        font-size: large;
+        padding: 10px 20px;
+    }
+
+    img.logo {
+        width: 138px;
+    }
+
+    button.submit-button {
+        margin: auto;
+        font-size: large;
+        padding: 10px 20px;
+    }
+
+    h1.page-title {
+        margin-bottom: 20px;
+        line-height: 1.3em;
+    }
+
+    p.description {
+        font-size: large;
+    }
+
+    .input-section {
+        margin-top: 0px;
+    }
+
+    input#first-name,
+    input#second-name {
+        box-sizing: border-box;
+        margin: 3px;
+    }
+
 }
 
-@media only screen and (max-width: 400px) {
-    /* Styles for screens up to 400 pixels wide */
+@media only screen and (max-width: 396px) {
+
+    a.item-links {
+        font-size: unset;
+    }
+
+    img.logo {
+        width: 101px;
+    }
+
+    nav.nav-container {
+        padding-top: 28px;
+    }
+
+    h1.page-title {
+        font-size: revert;
+    }
 }
