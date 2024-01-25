@@ -192,6 +192,10 @@ p#love-percentage {
 
 }
 
+.result-container .names-box {
+    margin-bottom: 22px;
+}
+
 p#result-paragraph {
     text-align: center;
     font-family: 'poppins', sans-serif;
