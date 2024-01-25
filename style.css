@@ -11,6 +11,47 @@ nav.nav-container {
     padding: 0px 10px;
 }
 
+.about {
+    background-color: #ffffffd0;
+    position: relative;
+    z-index: 999;
+    position: relative;
+    width: 100%;
+    display: none;
+}
+
+.popup {
+    width: 600px;
+    padding: 45px 35px;
+    margin: 50px auto;
+    position: absolute;
+    top: 50%;
+
+    background-color: white;
+}
+
+span.close:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+span.close {
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+    padding: 10px 15px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 img.logo {
     width: 200px;
 }
@@ -38,7 +79,8 @@ a.item-links {
 .width-container,
 nav.nav-container,
 .main-box,
-.width-container {
+.width-container,
+.about {
     width: 1200px;
     margin: auto;
 }
@@ -238,7 +280,8 @@ span.share {
     nav.nav-container,
     .content-box,
     .main-box,
-    .main-footer-content {
+    .main-footer-content,
+    .about {
         width: 90%;
         margin: auto;
     }

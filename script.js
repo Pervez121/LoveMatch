@@ -174,5 +174,10 @@ function getPreviewUrl() {
     return window.location.href; // Use the current page URL as the preview URL
 }
 
+function switchPopup() {
+    const popup = document.querySelector('.about');
+    popup.style.display = (popup.style.display === "none" || popup.style.display === "") ? "block" : "none";
+}
+
 
 
