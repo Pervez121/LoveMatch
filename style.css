@@ -320,6 +320,29 @@ span.share {
         margin: 3px;
     }
 
+    .share-container {
+        flex-direction: column;
+        background: beige;
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    span.share {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-bottom: solid 1px darkgray;
+        padding-bottom: 10px;
+        margin: 0px;
+    }
+
+    .share-icons-box {
+        padding-top: 10px;
+    }
+
+
+
 }
 
 @media only screen and (max-width: 396px) {
