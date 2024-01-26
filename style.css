@@ -22,6 +22,10 @@ nav.nav-container {
 .popup {
     width: 600px;
     padding: 45px 35px;
+    margin: 50px auto;
+    position: absolute;
+    top: 50%;
+
     background-color: white;
     position: absolute;
 }
