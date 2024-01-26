@@ -3,15 +3,16 @@ function generateLoveText() {
     const yourName = document.querySelector("#first-name").value;
     const partnerName = document.querySelector("#second-name").value;
 
-    let firstName = yourName.toLowerCase().charAt(0).toUpperCase() + yourName.slice(1);
-    let secondName = partnerName.toLowerCase().charAt(0).toUpperCase() + partnerName.slice(1);
+    let firstName = yourName.replace(/\s+/g, ' ').trim().toLowerCase().charAt(0).toUpperCase() + yourName.slice(1);
+    let secondName = partnerName.replace(/\s+/g, ' ').trim().toLowerCase().charAt(0).toUpperCase() + partnerName.slice(1);
+
 
     // Regular expression to check if names contain only alphabetical characters and emojis like hearts
     var nameRegex = /^[A-Za-z\s\u2764]+$/;
 
     if (!nameRegex.test(firstName) || !nameRegex.test(secondName)) {
         alert("Please enter valid names");
-        return false; // Prevent form submission
+        return false; // Prevent form submission 
     }
 
     else {

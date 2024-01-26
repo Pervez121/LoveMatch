@@ -13,7 +13,6 @@ nav.nav-container {
 
 .about {
     background-color: #ffffffd0;
-    position: relative;
     z-index: 999;
     position: relative;
     width: 100%;
@@ -23,11 +22,8 @@ nav.nav-container {
 .popup {
     width: 600px;
     padding: 45px 35px;
-    margin: 50px auto;
-    position: absolute;
-    top: 50%;
-
     background-color: white;
+    position: absolute;
 }
 
 span.close:hover {
@@ -80,7 +76,8 @@ a.item-links {
 nav.nav-container,
 .main-box,
 .width-container,
-.about {
+.about,
+.popup-main {
     width: 1200px;
     margin: auto;
 }
