@@ -284,8 +284,7 @@ section.popup-main {
     nav.nav-container,
     .content-box,
     .main-box,
-    .main-footer-content,
-    .about {
+    .main-footer-content {
         width: 90%;
         margin: auto;
     }
@@ -299,6 +298,11 @@ section.popup-main {
     input#second-name,
     input#first-name {
         font-size: 15px;
+    }
+
+    .popup {
+        width: 90%;
+        margin: auto;
     }
 
 }

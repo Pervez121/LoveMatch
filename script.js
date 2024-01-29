@@ -3,8 +3,8 @@ function generateLoveText() {
     const yourName = document.querySelector("#first-name").value;
     const partnerName = document.querySelector("#second-name").value;
 
-    let firstName = yourName.replace(/\s+/g, ' ').trim().toLowerCase().toUpperCase() + yourName.slice(1);
-    let secondName = partnerName.replace(/\s+/g, ' ').trim().toLowerCase().toUpperCase() + partnerName.slice(1);
+    let firstName = yourName.replace(/\s+/g, ' ').trim().toLowerCase().toUpperCase();
+    let secondName = partnerName.replace(/\s+/g, ' ').trim().toLowerCase().toUpperCase();
 
 
     // Regular expression to check if names contain only alphabetical characters and emojis like hearts
@@ -23,8 +23,8 @@ function generateLoveText() {
 
 
         if (
-            (firstName == "Junaiba karim" || firstName == "Junaiba" || firstName == "Pervez" || firstName == "Pervez Iqbal" || firstName == "Pervez iqbal" || firstName == "JUNAIBA KARIM" || firstName == "PERVEZ IQBAL") &&
-            (secondName == "Junaiba karim" || secondName == "Junaiba" || secondName == "Pervez" || secondName == "Junaiba Karim" || secondName == "Pervez Iqbal" || secondName == "JUNAIBA KARIM" || secondName == "PERVEZ IQBAL")) {
+            (firstName == "Junaiba karim" || firstName == "PERVEZ" || firstName == "JUNAIBA" || firstName == "Pervez Iqbal" || firstName == "Pervez iqbal" || firstName == "JUNAIBA KARIM" || firstName == "PERVEZ IQBAL") &&
+            (secondName == "Junaiba karim" || secondName == "JUNAIBA" || secondName == "PERVEZ" || secondName == "Junaiba Karim" || secondName == "Pervez Iqbal" || secondName == "JUNAIBA KARIM" || secondName == "PERVEZ IQBAL")) {
 
             ranNumber = 100;
             animation = "celestial-celebration";
