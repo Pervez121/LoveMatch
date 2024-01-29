@@ -11,24 +11,8 @@ nav.nav-container {
     padding: 0px 10px;
 }
 
-.about {
-    background-color: #ffffffd0;
-    z-index: 999;
-    position: relative;
-    width: 100%;
-    display: none;
-}
 
-.popup {
-    width: 600px;
-    padding: 45px 35px;
-    margin: 50px auto;
-    position: absolute;
-    top: 50%;
 
-    background-color: white;
-    position: absolute;
-}
 
 span.close:hover {
     cursor: pointer;
@@ -79,9 +63,7 @@ a.item-links {
 .width-container,
 nav.nav-container,
 .main-box,
-.width-container,
-.about,
-.popup-main {
+.width-container {
     width: 1200px;
     margin: auto;
 }
@@ -273,6 +255,27 @@ span.share {
     width: 50px;
     margin: 0px 10px;
 }
+
+section.popup-main {
+    position: relative;
+    width: 100%;
+}
+
+.about {
+    display: none;
+    position: absolute;
+    width: 100%;
+
+}
+
+.popup {
+    width: 60%;
+    margin: auto;
+    padding: 45px 35px;
+    margin: 50px auto;
+    background-color: white;
+}
+
 
 @media only screen and (max-width: 1200px) {
 
